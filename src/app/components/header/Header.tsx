@@ -12,7 +12,7 @@ const mainLinks = [
   { link: '#', label: 'Code examples' },
   { link: '#', label: 'Skills' },
   { link: '#', label: 'Experience' },
-  { link: '#', label: 'CV' },
+  { link: '#', label: 'CV' + ' ' + '\u{1F4CE}'},
 
 ];
 
