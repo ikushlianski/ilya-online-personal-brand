@@ -25,8 +25,17 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: inherit;
-    font-size: inherit;
+    margin-top: 0;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 html,
@@ -36,4 +45,10 @@ body {
     font-size: 16px;
     background-color: #060404;
     color: #ffffffd1;
+}
+
+:root {
+    --color-green: #0cdbdb;
+    --color-purple: #8c22b7;
+    --color-orange: #ee710b;
 }

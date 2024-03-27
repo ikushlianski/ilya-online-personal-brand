@@ -1,11 +1,30 @@
 .introduction {
-
+    width: 100vw;
+    height: calc(100vh - rem(84px));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .introduction_name{
 
 }
 
-.introduction_photo {
-
+.name_frontend {
+    color: var(--color-green);
 }
+
+.name_backend {
+    color: var(--color-purple);
+}
+
+.name_mentor {
+    color: var(--color-orange)
+}
+
+.introduction_photo {
+    width: 40vw;
+    height: 100%;
+}
+
+
