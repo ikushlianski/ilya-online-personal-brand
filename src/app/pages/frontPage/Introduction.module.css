@@ -4,21 +4,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.introduction_name{
 
 }
 
-.name_frontend {
+.introduction_wrapper{
+    position: relative;
+
+}
+
+.introduction_professions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.introduction_name {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100vw;
+}
+
+.profession_frontend {
     color: var(--color-green);
 }
 
-.name_backend {
+.profession_backend {
     color: var(--color-purple);
 }
 
-.name_mentor {
+.profession_mentor {
     color: var(--color-orange)
 }
 

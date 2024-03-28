@@ -32,11 +32,16 @@ export const Introduction = () => {
 
   return (
     <section className={styles.introduction}>
-      <div className={styles.introduction_name}>
-        <h1 id={'name'}>Ilya Kushlianski</h1>
-        <h2 className={styles.name_frontend} id={'frontend'}>{frontendText}</h2>
-        <h2 className={styles.name_backend} id={'backend'}>{backendText}</h2>
-        <h2 className={styles.name_mentor} id={'mentor'}>{mentorText}</h2>
+      <div className={styles.introduction_wrapper}>
+        <div className={styles.introduction_name}>
+          <h1  id={'name'}>Ilya Kushlianski</h1>
+        </div>
+        <div className={styles.introduction_professions}>
+          <h2 className={styles.profession_frontend} id={'frontend'}>{frontendText}</h2>
+          <h2 className={styles.profession_backend} id={'backend'}>{backendText}</h2>
+          <h2 className={styles.profession_mentor} id={'mentor'}>{mentorText}</h2>
+        </div>
+
       </div>
 
       <div className={styles.introduction_photo}>
