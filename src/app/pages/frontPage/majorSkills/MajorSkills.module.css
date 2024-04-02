@@ -1,0 +1,30 @@
+.skills {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.skills_header {
+    margin: 0 auto;
+}
+
+.skills_header h2 {
+    margin-bottom: 5rem;
+}
+
+.skills_box {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+    padding: 3rem;
+    justify-content: space-between;
+
+}
+
+.box_item {
+}
+
+.box_item image {
+
+}

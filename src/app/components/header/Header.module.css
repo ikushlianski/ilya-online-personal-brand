@@ -1,10 +1,22 @@
 .header {
-    height: rem(84px);
+    min-height: rem(58px);
+    /*min-height: var(--ai-size-xl);*/
     background-color: var(--mantine-color-black);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
+    background-color: #0cdbdb;
 }
 
+.burger {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 .inner {
-    height: rem(84px);
+    /*height: rem(84px);*/
+    position: relative;
 }
 
 .links {

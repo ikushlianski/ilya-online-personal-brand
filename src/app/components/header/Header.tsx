@@ -47,8 +47,9 @@ export function Header() {
           opened={opened}
           onClick={toggle}
           className={classes.burger}
-          size="sm"
+          size="md"
           hiddenFrom="sm"
+          color={'white'}
         />
       </Container>
     </header>

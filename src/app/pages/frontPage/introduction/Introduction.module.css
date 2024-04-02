@@ -1,5 +1,5 @@
 .introduction {
-    width: 80vw;
+    /*width: 80vw;*/
     height: calc(100vh - rem(84px));
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@
     position: absolute;
     top: -5vh;
     left: 0;
-    width: 100vw;
+    max-width: 100%;
     color: var(--color-orange)
 }
 
@@ -43,4 +43,15 @@
     height: 100%;
 }
 
+
+@media screen and (min-width: 320px){
+    .introduction_professions {
+        min-width: 100vw;
+        margin-top: -30px;
+    }
+
+    .introduction_professions span {
+        text-align: center;
+    }
+}
 
