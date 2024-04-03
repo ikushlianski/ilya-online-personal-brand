@@ -1,5 +1,4 @@
 .introduction {
-    /*width: 80vw;*/
     height: calc(100vh - rem(84px));
     display: flex;
     align-items: center;
@@ -8,7 +7,7 @@
 
 .introduction_wrapper{
     position: relative;
-
+    width: 100%;
 }
 
 .introduction_professions {
@@ -16,7 +15,10 @@
     top: -5vh;
     left: 0;
     max-width: 100%;
-    color: var(--color-orange)
+    color: var(--color-orange);
+
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .introduction_name {
@@ -25,6 +27,7 @@
     left: 0;
     width: 100vw;
 }
+
 
 .profession_frontend {
     color: var(--color-green);
@@ -43,6 +46,14 @@
     height: 100%;
 }
 
+.introduction_button {
+    width: 100%;
+    height: 45px;
+    margin-top:var(--ai-size-xl);
+    display: inline-block;
+    text-align: center;
+}
+
 
 @media screen and (min-width: 320px){
     .introduction_professions {
@@ -52,6 +63,8 @@
 
     .introduction_professions span {
         text-align: center;
+        /*margin-left: 20px;*/
+
     }
 }
 

@@ -61,7 +61,10 @@ body {
 
 @media screen and (min-width: 320px) {
     h1{
-        font-size: var(--ai-size-lg);
+        font-size: var(--ai-size-xl);
         text-align: center;
+    }
+    h2 {
+        font-size: var(--ai-size-md);
     }
 }

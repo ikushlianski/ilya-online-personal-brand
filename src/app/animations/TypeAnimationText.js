@@ -16,7 +16,7 @@ export const typeAnimationText = (text1, text2, text3) => {
   },
 ]}
   wrapper="span"
-  cursor={true}
+  cursor={false}
   // repeat={Infinity}
   style={{ fontSize: '2em', display: 'inline-block' }}
   />

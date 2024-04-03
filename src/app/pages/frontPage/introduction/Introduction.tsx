@@ -1,6 +1,7 @@
 'use client'
+import ClickButton from '@components/button/ClickButton';
 import styles from './Introduction.module.css';
-import {typeAnimationText} from '@animations/TypeAnimationText'
+import {typeAnimationText} from '@animations/TypeAnimationText';
 
 
 export const Introduction = () => {
@@ -18,12 +19,17 @@ export const Introduction = () => {
         <div className={styles.introduction_professions}>
             {typeAnimationText(frontend_text, backend_text, mentor_text)}
         </div>
+        <div className={styles.introduction_button}>
+          <ClickButton text={'See my CV'}/>
+        </div>
 
       </div>
+
 
       {/*<div className={styles.introduction_photo}>*/}
 
       {/*</div>*/}
+
 
 
     </section>
