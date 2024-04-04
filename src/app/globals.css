@@ -51,12 +51,24 @@ body {
     --color-green: #0cdbdb;
     --color-purple: #8c22b7;
     --color-orange: #ee710b;
+    --accent: #e20202;
 
     --ai-size-xs: rem(18px);
     --ai-size-sm: rem(22px);
     --ai-size-md: rem(28px);
     --ai-size-lg: rem(34px);
     --ai-size-xl: rem(44px);
+
+
+    /*
+  Paddings and margins
+ */
+    --padding-margin-tiny: 0.1rem;
+    --padding-margin-small: 0.5rem;
+    --padding-margin-normal: 1rem;
+    --padding-margin-big: 1.5rem;
+    --padding-margin-huge: 2rem;
+    --padding-margin-giant: 3rem;
 }
 
 @media screen and (min-width: 320px) {
@@ -68,3 +80,5 @@ body {
         font-size: var(--ai-size-md);
     }
 }
+
+

@@ -5,9 +5,9 @@ interface Button {
   text:string
 }
 
-const ClickButton = ({children}:Button) => {
+const ClickButton = ({text}:Button) => {
   return (
-    <button className={styles.button}>{children}</button>
+      <button className={styles.button}>{text}</button>
   )
 }
 

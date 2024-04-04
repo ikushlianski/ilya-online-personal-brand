@@ -1,3 +1,4 @@
+import ClickButton from '@components/button/ClickButton';
 import Image from 'next/image';
 import styles from './MajorSkills.module.css';
 import javascript from '/public/javascript.png';
@@ -14,17 +15,20 @@ export const MajorSkills = () => {
         </div>
       <div className={styles.skills_box}>
         <div className={styles.box_item}>
-          <Image src={javascript} alt={'JavaScriptImage'} width={150}/>
+          <Image src={javascript} alt={'JavaScriptImage'} width={100}/>
         </div>
         <div className={styles.box_item}>
-          <Image src={typescript} alt={'TypeScriptImage'} width={150}/>
+          <Image src={typescript} alt={'TypeScriptImage'} width={100}/>
         </div>
         <div className={styles.box_item}>
-          <Image src={react} alt={'ReactImage'} width={150}/>
+          <Image src={react} alt={'ReactImage'} width={100}/>
         </div>
         <div className={styles.box_item}>
-          <Image src={node} alt={'NodeImage'} width={150}/>
+          <Image src={node} alt={'NodeImage'} width={100}/>
         </div>
+      </div>
+      <div className={styles.skills_button}>
+        <ClickButton text={'Explore all my skills'}/>
       </div>
     </section>
   )

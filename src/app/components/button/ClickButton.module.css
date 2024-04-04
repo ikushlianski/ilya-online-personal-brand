@@ -1,5 +1,18 @@
+
 .button {
-    min-width: 110px;
-    min-height: 45px;
-    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, green, purple, orange) 1;
+    border-image-slice: 1;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Add hover effect */
 }
