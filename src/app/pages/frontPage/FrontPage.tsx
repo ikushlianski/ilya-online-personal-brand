@@ -3,6 +3,9 @@ import {MajorSkills} from '@pages/frontPage/majorSkills/MajorSkills';
 import {
   NewApportunities
 } from '@pages/frontPage/newApportunities/NewApportunities';
+import {
+  InterestingProject
+} from '@pages/frontPage/intrestingProgect/InterestingProject';
 import styles from './FrontPage.module.css'
 
 export const FrontPage = () => {
@@ -11,5 +14,6 @@ export const FrontPage = () => {
       <Introduction/>
       <MajorSkills/>
       <NewApportunities isLookingForJob={true}/>
+      <InterestingProject/>
     </div>
 )}

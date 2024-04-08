@@ -1,19 +1,29 @@
+import {black} from 'next/dist/lib/picocolors';
 import React from 'react';
 import type { Metadata } from "next";
-import {Open_Sans} from "next/font/google"
+// import {Open_Sans} from "next/font/google"
 import "./globals.css";
 import '@mantine/core/styles.css';
 
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import {
+  ColorSchemeScript,
+  createTheme,
+  MantineProvider,
+  rem
+} from '@mantine/core';
 import {Header} from '@components/header/Header';
 
+const theme = createTheme({
+  fontFamily: 'Open Sans, sans-serif',
 
+});
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+// const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ilya Kushlianski",
   description: "Personal website",
+
 };
 
 export default function RootLayout({
@@ -23,8 +33,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={openSans.className}>
-      <MantineProvider>
+      <body >
+      <MantineProvider theme={theme}>
         <Header/>
         {children}
       </MantineProvider>

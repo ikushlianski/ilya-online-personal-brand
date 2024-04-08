@@ -1,8 +1,9 @@
 .header {
     min-height: rem(58px);
     /*min-height: var(--ai-size-xl);*/
-    background-color: var(--mantine-color-black);
+    background-color: var(--mantine-color-gray-9);
     position: fixed;
+    top:0;
     z-index: 10;
     width: 100%;
 }
