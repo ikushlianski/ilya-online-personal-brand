@@ -8,6 +8,7 @@ import {
   InterestingProject
 } from '@pages/frontPage/intrestingProgect/InterestingProject';
 import {WhyMe} from '@pages/frontPage/whyMe/WhyMe';
+import {MyExperience} from '@pages/frontPage/myExperience/MyExperience';
 
 export const FrontPage = () => {
 
@@ -19,5 +20,6 @@ export const FrontPage = () => {
       <NewApportunities isLookingForJob={true}/>
       <InterestingProject/>
       <WhyMe/>
+      <MyExperience/>
     </Container>
 )}
