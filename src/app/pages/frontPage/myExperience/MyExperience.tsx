@@ -1,4 +1,4 @@
-import {Flex, Title, Text, Stack, Highlight} from '@mantine/core';
+import {Text, Stack, Highlight} from '@mantine/core';
 
 export const MyExperience = () => {
   return (
