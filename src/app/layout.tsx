@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 // import {Open_Sans} from "next/font/google"
 import "./globals.css";
 import '@mantine/core/styles.css';
-import { AppShell, Burger } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+
 
 import {
   ColorSchemeScript,
@@ -16,7 +15,13 @@ import {Header} from '@components/header/Header';
 
 const theme = createTheme({
   fontFamily: 'Open Sans, sans-serif',
-
+  spacing: {
+    xs: '0.5rem',
+    sm: '0.75rem',
+    md: '1rem',
+    lg: '1.5rem',
+    xl: '5rem',
+  },
 });
 
 // const openSans = Open_Sans({ subsets: ["latin"] });
@@ -24,6 +29,7 @@ const theme = createTheme({
 export const metadata: Metadata = {
   title: "Ilya Kushlianski",
   description: "Personal website",
+
 };
 
 export default function RootLayout({

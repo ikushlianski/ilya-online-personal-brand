@@ -7,13 +7,12 @@ import {
 import {
   InterestingProject
 } from '@pages/frontPage/intrestingProgect/InterestingProject';
-import styles from './FrontPage.module.css'
 
 export const FrontPage = () => {
 
 
   return (
-    <Container>
+    <Container fluid bg="var(--mantine-color-gray-9)" size='responsive' c='var(--mantine-color-white)'>
       <Introduction/>
       <MajorSkills/>
       <NewApportunities isLookingForJob={true}/>
