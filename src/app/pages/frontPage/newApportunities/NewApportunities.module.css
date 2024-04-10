@@ -1,75 +1,35 @@
-/*.newApportunities {*/
-/*  width: 100%;*/
-/*  height: 300px;*/
-/*  margin-top: var(--padding-margin-giant);*/
-/*  margin-bottom: var(--padding-margin-giant);*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
+.newApportunities_liveIndicator {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, var(--mantine-color-red-8), #A40000);
+}
 
-/*.newApportunities_header {*/
-/*  text-align: center;*/
-/*}*/
+.liveIndicator_waves {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, var(--mantine-color-red-8), #A40000);
+  animation: waves;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-direction: normal;
+}
 
-/*.newApportunities_button {*/
-/*  margin-top: var(--padding-margin-huge);*/
-/*  margin-bottom: var(--padding-margin-huge);*/
-/*}*/
 
-/*.socialMedia_item {*/
-/*  min-width: 40px;*/
-/*  min-height: 40px;*/
-/*  margin: 0 10px;*/
-/*}*/
+@keyframes waves {
+  0% {
+    opacity: 1;
+  }
 
-/*.newApportunities_socialLinks {*/
-/*  display: flex;*/
-/*  justify-content: space-around;*/
-/*  margin-top:var(--padding-margin-big);*/
-/*  margin-bottom: var(--padding-margin-big);*/
-/*}*/
+  50% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
 
-/*.newApportunities_liveIndicator {*/
-/*  position: relative;*/
-/*  width: 3rem;*/
-/*  height: 3rem;*/
-/*  border-radius: 50%;*/
-/*  background: linear-gradient(to bottom right, var(--accent), #A40000);*/
-/*  margin-top: 150px;*/
-/*  margin-bottom: var(--padding-margin-giant);*/
-/*}*/
-
-/*.liveIndicator_waves {*/
-/*  position: absolute;*/
-/*  width: 3rem;*/
-/*  height: 3rem;*/
-/*  border-radius: 50%;*/
-/*  background: linear-gradient(to bottom right, var(--accent), #A40000);*/
-/*  animation: waves;*/
-/*  animation-iteration-count: infinite;*/
-/*  animation-duration: 1.5s;*/
-/*  animation-direction: normal;*/
-/*}*/
-
-/*.newApportunities_headerWrapper {*/
-/*  margin-top:var(--padding-margin-giant);*/
-/*  color:var(--color-orange)*/
-/*}*/
-
-/*@keyframes waves {*/
-/*  0% {*/
-/*    opacity: 1;*/
-/*  }*/
-
-/*  50% {*/
-/*    transform: scale(2.4);*/
-/*    opacity: 0;*/
-/*  }*/
-
-/*  100% {*/
-/*    transform: scale(1);*/
-/*    opacity: 0;*/
-/*  }*/
-/*}*/
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

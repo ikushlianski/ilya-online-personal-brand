@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './NewApportunities.module.css';
 import github from '/public/github.svg';
-import linkedin from '/public/linkedin.svg'
+import linkedin from '/public/linkedin.svg';
+import {Flex, Title} from '@mantine/core';
 
 
 interface Props {
@@ -12,36 +13,29 @@ interface Props {
 
 export const NewApportunities = ({isLookingForJob}:Props) => {
   return (
-    <section className={styles.newApportunities}>
+    <Flex direction="column" align="center" gap="lg" style={(theme) => ({marginBottom : theme.spacing.xl})}>
       {isLookingForJob ? (
           <>
             <div className={styles.newApportunities_liveIndicator}>
               <div className={styles.liveIndicator_waves}></div>
             </div>
-            <div className={styles.newApportunities_headerWrapper}>
-              <h2 className={styles.newApportunities_header}>Considering new opportunities</h2>
-            </div>
-            <div className={styles.newApportunities_button}>
+
+              <Title order={2}>Considering new opportunities</Title>
               <ClickButton text={'See my CV'}/>
-            </div>
             </>) : (
-            <div>
-              <h3 className={styles.newApportunities_header}>I am not actively looking for new opportunities</h3>
-              <h3 className={styles.newApportunities_header}>But we could still stay in touch!</h3>
-            </div>)
+            <>
+              <Title order={3} style={{'text-align' : 'center'}}>I am not actively looking for new opportunities</Title>
+              <Title order={3}>But we could still stay in touch!</Title>
+            </>)
       }
-            <div className={styles.newApportunities_socialLinks}>
-              <div className={styles.socialMedia_item}>
+            <Flex gap='md'>
                 <Link href={'https://github.com/ikushlianski'}>
                   <Image src={github} width={40} alt={'github'}/>
                 </Link>
-              </div>
-              <div className={styles.socialMedia_item}>
                 <Link href={'https://www.linkedin.com/in/ilya-kushlianski'}>
                   <Image src={linkedin} alt={'linkedin'} width={40}/>
                 </Link>
-              </div>
-            </div>
-    </section>
+            </Flex>
+    </Flex>
   )
 }
