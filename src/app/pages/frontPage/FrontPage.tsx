@@ -7,6 +7,7 @@ import {
 import {
   InterestingProject
 } from '@pages/frontPage/intrestingProgect/InterestingProject';
+import {WhyMe} from '@pages/frontPage/whyMe/WhyMe';
 
 export const FrontPage = () => {
 
@@ -17,5 +18,6 @@ export const FrontPage = () => {
       <MajorSkills/>
       <NewApportunities isLookingForJob={true}/>
       <InterestingProject/>
+      <WhyMe/>
     </Container>
 )}

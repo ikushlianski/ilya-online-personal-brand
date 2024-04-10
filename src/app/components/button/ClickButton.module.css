@@ -1,8 +1,7 @@
-
 .button {
     background-color: transparent;
     border: 2px solid transparent;
-    border-image: linear-gradient(to right, green, purple, orange) 1;
+    border-image: linear-gradient(to right,  #0cdbdb, #8c22b7, #ee710b) 1;
     border-image-slice: 1;
     color: white;
     padding: 10px 20px;
