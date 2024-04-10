@@ -1,3 +1,4 @@
+import ClickButton from '@components/button/ClickButton';
 import {Stack, Title, Text, Highlight} from '@mantine/core';
 
 export const WhyMe = () => {
@@ -33,6 +34,11 @@ export const WhyMe = () => {
         fontWeight: 500,
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent'})}>Encourage proper backlog management, love clean and transparent Jira, value and encourage transparency in team work</Highlight>
+      <div style={{'display' : 'inline-block', 'text-align' : 'center'}}>
+        <ClickButton text={'My experience'}/>
+      </div>
+
+
     </Stack>
   )
 }
