@@ -33,3 +33,10 @@
         opacity: 0;
     }
 }
+
+@media (min-width: $mantine-breakpoint-sm){
+    .introduction {
+        height: calc(100vh - rem(84px));
+        justify-content: center;
+    }
+}

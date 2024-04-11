@@ -1,7 +1,7 @@
 import ClickButton from '@components/button/ClickButton';
 import {Flex, Title, Text} from '@mantine/core';
 import {typeAnimationText} from '@animations/TypeAnimationText';
-
+import style from '@pages/frontPage/frontPage.module.css';
 
 export const Introduction = () => {
   const frontend_text = 'Frontend developer';
@@ -10,7 +10,7 @@ export const Introduction = () => {
 
 
   return (
-    <Flex direction="column" align="center" gap="lg" style={(theme) => ({marginTop: theme.spacing.xl, marginBottom: theme.spacing.xl})}>
+    <Flex direction="column" align="center" gap="lg" style={(theme) => ({marginTop: theme.spacing.xl, marginBottom: theme.spacing.xl})} className={style.introduction}>
       <Title order={1}>Ilya Kushlianski</Title>
       <Text size='sm' style={(theme) => ({color: theme.colors.myGreenColor[7], textAlign : 'center', height: '85px'})}>{typeAnimationText(frontend_text, backend_text, mentor_text)}</Text>
       <ClickButton text={'See my CV'}/>
