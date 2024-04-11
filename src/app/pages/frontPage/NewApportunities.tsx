@@ -1,7 +1,7 @@
 import ClickButton from '@components/button/ClickButton';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './NewApportunities.module.css';
+import styles from './frontPage.module.css';
 import github from '/public/github.svg';
 import linkedin from '/public/linkedin.svg';
 import {Flex, Title} from '@mantine/core';

@@ -1,9 +1,15 @@
-body {
-    background-color: var(--mantine-color-gray-9)!important;
-    color: var(--mantine-color-white)
+:root {
+    --custom-green-color: #0cdbdb;
+    --custom-purple-color: #8c22b7;
+    --custom-orange-color: #ee710b;
+    --mantine-color-body: var(--mantine-color-gray-9);
+    --mantine-color-text: white;
 }
 
-
+body {
+    background-color: var(--mantine-color-gray-9)!important;
+    color: var(--mantine-color-white);
+}
 
 
 
