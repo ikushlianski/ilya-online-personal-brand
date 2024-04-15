@@ -1,5 +1,5 @@
 import ClickButton from "@components/button/ClickButton";
-import { Stack, Title, Text, Highlight } from "@mantine/core";
+import { Stack, Title, Highlight } from "@mantine/core";
 
 export const WhyMe = () => {
   return (

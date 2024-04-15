@@ -52,10 +52,12 @@
     text-transform: uppercase;
     transition: color 100ms ease;
 
+
 @mixin hover {
     color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
     text-decoration: none;
+ }
 }
-}
+
 
 

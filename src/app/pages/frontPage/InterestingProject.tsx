@@ -1,5 +1,4 @@
 import { Stack, Title, Text, SimpleGrid } from "@mantine/core";
-import { theme } from "src/app/theme";
 
 export const InterestingProject = () => {
   return (

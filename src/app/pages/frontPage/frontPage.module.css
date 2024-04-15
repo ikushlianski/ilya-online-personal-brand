@@ -39,10 +39,34 @@
         height: calc(100vh - rem(84px));
         justify-content: center;
     }
+
+    .majorSkills_item {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 
+.spinner {
+    perspective: 1000px;
+}
 
+.digit {
+    transform: translate(-50%, -50%) rotateY(0deg);
+    animation: turnPage 2s infinite alternate;
+}
+
+@keyframes turnPage {
+    0% {
+        transform: translate(-50%, -50%) rotateY(0deg); /* Initial position */
+    }
+    50% {
+        transform: translate(-50%, -50%) rotateY(90deg); /* Halfway through the animation, rotate to 90 degrees */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotateY(180deg); /* End position, fully turned */
+    }
+}
 
 
 
