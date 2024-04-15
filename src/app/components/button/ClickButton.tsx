@@ -4,7 +4,6 @@ import style from "./Button.module.css";
 
 interface Iprops {
   text: string;
-  // size: string;
 }
 
 const ClickButton = ({ text }: Iprops) => {
