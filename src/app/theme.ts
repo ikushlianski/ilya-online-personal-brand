@@ -1,0 +1,106 @@
+"use client";
+import {
+  createTheme,
+  MantineColorsTuple,
+  Button,
+  mergeThemeOverrides,
+  rem,
+} from "@mantine/core";
+
+const myGreenColor: MantineColorsTuple = [
+  "#e1ffff",
+  "#cefefe",
+  "#a1fafa",
+  "#70f7f7",
+  "#4cf4f4",
+  "#36f2f2",
+  "#24f2f2",
+  "#0cd7d7",
+  "#00c0c0",
+  "#00a6a6",
+];
+
+const myOrangeColor: MantineColorsTuple = [
+  "#fff2e3",
+  "#ffe4ce",
+  "#fcc99f",
+  "#f8ab6b",
+  "#f5913f",
+  "#f48124",
+  "#f47914",
+  "#da6707",
+  "#c35a01",
+  "#aa4c00",
+];
+
+const myPurpleColor: MantineColorsTuple = [
+  "#fcecff",
+  "#efd6fa",
+  "#dcabef",
+  "#c87de6",
+  "#b756dd",
+  "#ac3ed9",
+  "#a831d7",
+  "#9224bf",
+  "#831eac",
+  "#721497",
+];
+
+const colorTheme = createTheme({
+  colors: {
+    myGreenColor,
+    myOrangeColor,
+    myPurpleColor,
+  },
+});
+
+export const theme = createTheme({
+  fontFamily: "Open Sans, sans-serif",
+  spacing: {
+    xs: "0.5rem",
+    sm: "0.75rem",
+    md: "1rem",
+    lg: "1.5rem",
+    xl: "5rem",
+  },
+
+  colors: {
+    myGreenColor,
+    myOrangeColor,
+    myPurpleColor,
+  },
+
+  components: {
+    Button: Button.extend({
+      vars: (theme, props) => {
+        if (props.size === "xxl") {
+          return {
+            root: {
+              "--button-height": rem(60),
+              "--button-padding-x": rem(30),
+              "--button-fz": rem(24),
+            },
+          };
+        }
+
+        if (props.size === "xxs") {
+          return {
+            root: {
+              "--button-height": rem(24),
+              "--button-padding-x": rem(10),
+              "--button-fz": rem(10),
+            },
+          };
+        }
+
+        return { root: {} };
+      },
+    }),
+  },
+
+  other: {
+    largeMargin: rem(7),
+  },
+});
+
+// export const theme = mergeThemeOverrides(baseTheme, colorTheme);

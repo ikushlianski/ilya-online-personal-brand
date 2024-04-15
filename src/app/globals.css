@@ -4,11 +4,26 @@
     --custom-orange-color: #ee710b;
     --mantine-color-body: var(--mantine-color-gray-9);
     --mantine-color-text: white;
+    --mantine-font-size-xxl: 52px;
+    --mantine-font-size-h2: 32px;
+    --mantine-font-size-p: 28px;
 }
 
 body {
     background-color: var(--mantine-color-gray-9)!important;
     color: var(--mantine-color-white);
+}
+
+@media (min-width: 48em) {
+    h1 {
+        font-size: var(--mantine-font-size-xxl)!important;
+    }
+    h2 {
+        font-size: var(--mantine-font-size-h2)!important;
+    }
+    p {
+        font-size: var(--mantine-font-size-p)!important;
+    }
 }
 
 
