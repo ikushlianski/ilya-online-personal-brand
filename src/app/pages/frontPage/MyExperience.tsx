@@ -1,4 +1,4 @@
-import { Text, Stack, Highlight } from "@mantine/core";
+import { Text, Stack, Highlight, Box } from "@mantine/core";
 import { experienceYears } from "@/app/variables/variables";
 import style from "./frontPage.module.css";
 
@@ -11,10 +11,11 @@ export const MyExperience = () => {
       gap="xs"
       style={(theme) => ({ marginBottom: theme.spacing.xl })}
     >
-      <div className={style.spinner}>
+      <Box className={style.spinner}>
         <Highlight
           className={style.digit}
           highlight={"7"}
+          pb="xl"
           style={(theme) => ({
             "font-size": "32px",
             color: theme.colors.myGreenColor[7],
@@ -29,7 +30,7 @@ export const MyExperience = () => {
         >
           {text}
         </Highlight>
-      </div>
+      </Box>
 
       <Text size="xl">of exciting web development journey</Text>
     </Stack>
