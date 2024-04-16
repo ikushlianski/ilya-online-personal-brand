@@ -2,7 +2,9 @@
     height: rem(84px);
     /*margin-bottom: rem(120px);*/
     background-color: var(--mantine-color-gray-9);
-    border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+    border-bottom: rem(1px) solid
+    /*light-dark(var(--mantine-color-gray-3), */
+            var(--mantine-color-dark-4));
 }
 
 .inner {
@@ -36,25 +38,25 @@
             color 100ms ease;
 
 @mixin hover {
-    color: light-dark( #0cdbdb,  #0cdbdb);
+    color:   var(--custom-green-color);
     text-decoration: none;
 }
 
 &[data-active] {
-     color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
-     border-bottom-color: #0cdbdb;
+     color: var(--mantine-color-white);
+     border-bottom-color: var(--custom-green-color);
  }
 }
 
 .secondaryLink {
-    color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
+    color: var(--mantine-color-white);
     font-size: var(--mantine-font-size-xs);
     text-transform: uppercase;
     transition: color 100ms ease;
 
 
 @mixin hover {
-    color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
+    color: var(--mantine-color-white));
     text-decoration: none;
  }
 }

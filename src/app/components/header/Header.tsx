@@ -1,27 +1,27 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Container, Anchor, Group, Burger, Box } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import classes from './Header.module.css';
-
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { Container, Anchor, Group, Burger, Box } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import classes from "./Header.module.css";
 
 const mainLinks = [
-  { link: '#', label: 'Home' },
-  { link: '#', label: 'Personality' },
-  { link: '#', label: 'Code examples' },
-  { link: '#', label: 'Skills' },
-  { link: '#', label: 'Experience' },
-  { link: '#', label: 'CV' + ' ' + '\u{1F4CE}'},
-
+  { link: "/", label: "Home" },
+  { link: "/personality", label: "Personality" },
+  { link: "/codeExamles", label: "Code examples" },
+  { link: "/skills", label: "Skills" },
+  { link: "/experience", label: "Experience" },
+  { link: "/cv", label: "CV" + " " + "\u{1F4CE}" },
 ];
 
 export function Header() {
   const [opened, { toggle }] = useDisclosure(false);
   const [active, setActive] = useState(0);
+  const router = useRouter();
 
   const mainItems = mainLinks.map((item, index) => (
-    <Anchor<'a'>
+    <Anchor<"a">
       href={item.link}
       key={item.label}
       className={classes.mainLink}
@@ -29,6 +29,7 @@ export function Header() {
       onClick={(event) => {
         event.preventDefault();
         setActive(index);
+        router.push(item.link);
       }}
     >
       {item.label}
@@ -49,7 +50,7 @@ export function Header() {
           className={classes.burger}
           size="md"
           hiddenFrom="sm"
-          color={'white'}
+          color={"white"}
         />
       </Container>
     </header>

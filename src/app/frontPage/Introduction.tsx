@@ -1,7 +1,7 @@
 import ClickButton from "@components/button/ClickButton";
 import { Flex, Title, Text } from "@mantine/core";
 import { typeAnimationText } from "@animations/TypeAnimationText";
-import style from "@pages/frontPage/frontPage.module.css";
+import style from "./frontPage.module.css";
 
 export const Introduction = () => {
   const frontend_text = "Frontend developer";
@@ -21,7 +21,7 @@ export const Introduction = () => {
     >
       <Title order={1}>Ilya Kushlianski</Title>
       <Text
-        size="xs"
+        size={{ base: "xs", sm: "sm" }}
         style={(theme) => ({
           color: theme.colors.myGreenColor[7],
           textAlign: "center",

@@ -21,9 +21,6 @@ body {
     h2 {
         font-size: var(--mantine-font-size-h2)!important;
     }
-    p {
-        font-size: var(--mantine-font-size-p)!important;
-    }
 }
 
 

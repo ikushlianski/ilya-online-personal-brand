@@ -1,22 +1,28 @@
-'use client'
-import {Footer} from '@components/footer/Footer';
-import {Header} from '@components/header/Header';
-import {AppShell} from '@mantine/core';
-import {FrontPage} from '@pages/frontPage/FrontPage';
+"use client";
+import { Container } from "@mantine/core";
+import { InterestingProject } from "@/app/frontPage/InterestingProject";
+import { Introduction } from "@/app/frontPage/Introduction";
+import { MajorSkills } from "@/app/frontPage/MajorSkills";
+import { MyExperience } from "@/app/frontPage/MyExperience";
+import { NewApportunities } from "@/app/frontPage/NewApportunities";
+import { WhyMe } from "@/app/frontPage/WhyMe";
 
 export default function Home() {
   return (
     <>
-      <AppShell withBorder={false} header={{ height: 70}}>
-        <AppShell.Header>
-          <Header/>
-        </AppShell.Header>
-        <AppShell.Main>
-          <FrontPage/>
-        </AppShell.Main>
-        <Footer/>
-      </AppShell>
-
+      <Container
+        fluid
+        bg="var(--mantine-color-gray-9)"
+        size="responsive"
+        c="var(--mantine-color-white)"
+      >
+        <Introduction />
+        <MajorSkills />
+        <NewApportunities isLookingForJob={true} />
+        <InterestingProject />
+        <WhyMe />
+        <MyExperience />
+      </Container>
     </>
   );
 }

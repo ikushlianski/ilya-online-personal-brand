@@ -24,7 +24,9 @@ export const NewApportunities = ({ isLookingForJob }: Props) => {
             <div className={styles.liveIndicator_waves}></div>
           </div>
 
-          <Title order={2}>Considering new opportunities</Title>
+          <Title order={3} textWrap={"nowrap"}>
+            Considering new opportunities
+          </Title>
           <ClickButton text={"See my CV"} />
         </>
       ) : (

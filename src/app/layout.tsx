@@ -1,8 +1,10 @@
+import { Footer } from "@components/footer/Footer";
+import { Header } from "@components/header/Header";
 import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import "@mantine/core/styles.css";
-import { MantineProvider } from "@mantine/core";
+import { AppShell, AppShellHeader, MantineProvider } from "@mantine/core";
 import { theme } from "@/app/theme";
 
 // const openSans = Open_Sans({ subsets: ["latin"] });
@@ -21,8 +23,13 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <MantineProvider theme={theme}>
-          {/*<Header/>*/}
+          <AppShell withBorder={false} header={{ height: 70 }}>
+            <AppShellHeader>
+              <Header />
+            </AppShellHeader>
+          </AppShell>
           {children}
+          <Footer />
         </MantineProvider>
       </body>
     </html>
