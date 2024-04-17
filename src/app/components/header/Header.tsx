@@ -9,7 +9,7 @@ import classes from "./Header.module.css";
 const mainLinks = [
   { link: "/", label: "Home" },
   { link: "/personality", label: "Personality" },
-  { link: "/codeExamles", label: "Code examples" },
+  { link: "/codeExamples", label: "Code examples" },
   { link: "/skills", label: "Skills" },
   { link: "/experience", label: "Experience" },
   { link: "/cv", label: "CV" + " " + "\u{1F4CE}" },
