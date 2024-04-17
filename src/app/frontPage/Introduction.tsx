@@ -21,7 +21,7 @@ export const Introduction = () => {
     >
       <Title order={1}>Ilya Kushlianski</Title>
       <Text
-        size={{ base: "xs", sm: "sm" }}
+        size={"sm"}
         style={(theme) => ({
           color: theme.colors.myGreenColor[7],
           textAlign: "center",

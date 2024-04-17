@@ -1,18 +1,15 @@
 "use client";
-import { Footer } from "@components/footer/Footer";
-import { Header } from "@components/header/Header";
-import { AppShell } from "@mantine/core";
-import { Personality } from "./Personality";
+import { Container } from "@mantine/core";
+import { HrInformation } from "@/app/personality/HrInformation";
+import { Coding } from "@/app/personality/Coding";
+import { Personal } from "@/app/personality/Personal";
 
 export default function PersonalityPage() {
   return (
-    <>
-      <AppShell withBorder={false} header={{ height: 70 }}>
-        <AppShell.Main>
-          <Personality />
-        </AppShell.Main>
-        <Footer />
-      </AppShell>
-    </>
+    <Container size="responsive" mx={"lg"} px={0} mt={"lg"}>
+      <HrInformation />
+      <Coding />
+      <Personal />
+    </Container>
   );
 }

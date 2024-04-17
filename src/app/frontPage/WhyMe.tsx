@@ -102,7 +102,7 @@ export const WhyMe = () => {
         Encourage proper backlog management, love clean and transparent Jira,
         value and encourage transparency in team work
       </Highlight>
-      <div style={{ display: "inline-block", "text-align": "center" }}>
+      <div style={{ display: "inline-block", textAlign: "center" }}>
         <ClickButton text={"My experience"} />
       </div>
     </Stack>

@@ -1,11 +1,5 @@
 "use client";
-import {
-  createTheme,
-  MantineColorsTuple,
-  Button,
-  mergeThemeOverrides,
-  rem,
-} from "@mantine/core";
+import { createTheme, MantineColorsTuple, rem } from "@mantine/core";
 
 const myGreenColor: MantineColorsTuple = [
   "#e1ffff",
@@ -46,13 +40,13 @@ const myPurpleColor: MantineColorsTuple = [
   "#721497",
 ];
 
-const colorTheme = createTheme({
-  colors: {
-    myGreenColor,
-    myOrangeColor,
-    myPurpleColor,
-  },
-});
+// const colorTheme = createTheme({
+//   colors: {
+//     myGreenColor,
+//     myOrangeColor,
+//     myPurpleColor,
+//   },
+// });
 
 export const theme = createTheme({
   fontFamily: "Open Sans, sans-serif",

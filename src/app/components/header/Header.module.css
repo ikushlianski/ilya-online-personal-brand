@@ -29,7 +29,7 @@
 .mainLink {
     text-transform: uppercase;
     font-size: var(--mantine-font-size-xs);
-    color: light-dark(var(--mantine-color-white), var(--mantine-color-white));
+    color: light-dark(var(--mantine-color-white), var(--mantine-color-white))!important;
     padding: rem(7px) var(--mantine-spacing-sm);
     font-weight: 700;
     border-bottom: rem(2px) solid transparent;
@@ -38,12 +38,12 @@
             color 100ms ease;
 
 @mixin hover {
-    color:   var(--custom-green-color);
+    color:   var(--custom-green-color)!important;
     text-decoration: none;
 }
 
 &[data-active] {
-     color: var(--mantine-color-white);
+     color: var(--mantine-color-white)!important;
      border-bottom-color: var(--custom-green-color);
  }
 }
@@ -56,10 +56,11 @@
 
 
 @mixin hover {
-    color: var(--mantine-color-white));
+    color: var(--mantine-color-white)!important;
     text-decoration: none;
  }
 }
+
 
 
 
